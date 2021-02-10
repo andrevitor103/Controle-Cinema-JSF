@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Adicionar Sessão</title>
+    </h:head>
+    <h:body>
+        <f:view>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="CodFilme:" for="codFilme" />
+                    <h:inputText id="codFilme" value="#{sessaoController.sessao.codFilme}" title="CodFilme" />
+                    <h:outputLabel value="CodSala:" for="codSala" />
+                    <h:inputText id="codSala" value="#{sessaoController.sessao.codSala}" title="CodSala" />
+                    <h:outputLabel value="Data:" for="data" />
+                    <h:inputText id="data" value="#{sessaoController.sessao.data}" title="Data" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="Horario:" for="horario" />
+                    <h:inputText id="horario" value="#{sessaoController.sessao.horario}" title="Horario" >
+                        <f:convertDateTime pattern="HH:mm:ss" />
+                    </h:inputText>
+                </h:panelGrid>
+                <h:commandButton value="Salvar" action="#{sessaoController.adicionar()}"></h:commandButton>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+

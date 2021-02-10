@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/02/2021, 14:08:01
+    Author     : Andre Vitor
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    margin-left: 20%; 
+    padding: 4px;
+}
+
+.menu > h4 {
+    color: red;
+}
